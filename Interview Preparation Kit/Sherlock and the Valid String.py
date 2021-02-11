@@ -8,9 +8,11 @@ def isValid(s):
 
     if it_list.count(it_list[0]) == len(it_list):
         return 'YES'
-    elif it_list.count(it_list[0]) == len(it_list) - 1 and it_list[-1] - it_list[-2] == 1:
+    elif it_list.count(it_list[0]) == len(it_list) - 1 \
+            and it_list[-1] - it_list[-2] == 1:
         return 'YES'
-    elif it_list.count(it_list[-1]) == len(it_list) - 1 and it_list[0] == 1:
+    elif it_list.count(it_list[-1]) == len(it_list) - 1 \
+            and it_list[0] == 1:
         return 'YES'
     else:
         return 'NO'
